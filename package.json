@@ -28,13 +28,15 @@
     "@nestjs/swagger": "^4.5.12",
     "@typegoose/typegoose": "^7.3.0",
     "@types/mongoose": "^5.7.30",
+    "@types/uuid": "^8.0.0",
     "mongoose": "^5.9.22",
     "nestjs-mongoose-crud": "^2.0.0",
     "nestjs-typegoose": "^7.1.28",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4",
-    "swagger-ui-express": "^4.1.4"
+    "swagger-ui-express": "^4.1.4",
+    "uuid": "^8.2.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.0.0",

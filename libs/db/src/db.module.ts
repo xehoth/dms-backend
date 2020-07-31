@@ -1,7 +1,9 @@
 import { Module, Global } from '@nestjs/common';
 import { DbService } from './db.service';
 import { TypegooseModule } from 'nestjs-typegoose';
+import { Student } from './models/student.model';
 
+const models = TypegooseModule.forFeature([Student]);
 @Global()
 @Module({
   imports: [
@@ -15,9 +17,10 @@ import { TypegooseModule } from 'nestjs-typegoose';
           useFindAndModify: false
         };
       }
-    })
+    }),
+    models
   ],
   providers: [DbService],
-  exports: [DbService],
+  exports: [DbService, models],
 })
 export class DbModule { }
